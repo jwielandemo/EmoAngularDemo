@@ -1,0 +1,4 @@
+EmoAngularDemo
+==============
+
+Demo Angular App
