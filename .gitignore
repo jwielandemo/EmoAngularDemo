@@ -1,0 +1,49 @@
+
+node_modules
+
+.idea/
+*/.idea/
+
+# Scala ignores
+/project/boot/
+/project/plugins/project
+target/
+lib_managed/
+src_managed/
+test-output/
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# pythonic ignores
+*.pyc
+
+#testing artifacts
+*/.tox
+*/build
+*/dist
+*/*egg-info
+*/.coverage
+*/coverage.xml
+*/coverage_html
+
+# OS Junk
+.DS_Store
+
+#editors
+*~
+*\#
+
+# P4Merge artifacts
+*.orig
