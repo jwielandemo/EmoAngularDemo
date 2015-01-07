@@ -7,7 +7,7 @@
 
 # Instructions
 
-Implement a simple login UI workflow.  The workflow consists of 3 pages, a login page, a success page, and an failure page.  Follow the provided mockups so that the UI follows the specifications as closely as possible.
+Implement a simple login UI workflow.  The workflow consists of 3 pages, a login page, a success page, and an failure page.  Follow the provided mockups (screenshots directory) so that the UI follows the specifications as closely as possible.
 
 ## Login Page
 
