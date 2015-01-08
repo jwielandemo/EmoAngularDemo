@@ -1,3 +1,18 @@
-<div ng-controller="HomeController">
-    <p class="home">{{ text }}</p>
+<div class="container" ng-controller="HomeController">
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2 container-emo container-login">
+			<div class="height-50"></div>
+			<div class="col-xs-8 col-xs-offset-2">
+			    <div class="input-group margin-20">
+				    <input type="text" ng-model="email" ng-keyup="validateEmail()" placeholder="Email" class="form-control white-input"/>
+				    <validated valid="emailValid"></validated>
+				</div>
+				<div class="input-group margin-20">
+				    <input type="password" ng-model="password" ng-keyup="validatePassword()" placeholder="Password" class="form-control white-input"/>
+				    <validated valid="passwordValid"></validated>
+				</div>
+		    	<button ng-click="go()" class="button center-block round-orange" ng-disabled="!fieldsNotEmpty">Login</button>
+	    	</div>
+    	</div>
+	</div>
 </div>
