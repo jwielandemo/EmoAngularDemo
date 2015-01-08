@@ -4,6 +4,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-karma');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -25,8 +26,14 @@ module.exports = function(grunt) {
                     'app/css/styles.css': 'app/css/styles.less'
                 }
             }
+        },
+
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js'
+            }
         }
     });
 
-    grunt.registerTask('default', ['less', 'connect:server']);
+    grunt.registerTask('default', ['less', 'karma', 'connect:server']);
 };
